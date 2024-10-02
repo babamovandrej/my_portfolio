@@ -1,0 +1,11 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.progress {
+    font-size: 9vw;
+    color: #fff;
+}
+
