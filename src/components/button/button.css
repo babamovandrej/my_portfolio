@@ -1,0 +1,27 @@
+.button {
+    padding: 24px 40px;
+    font-size: 1.25em;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--color-foreground);
+    transition: ease-in-out 0.2s; 
+}
+
+.button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.button-success {
+    background-color: var(--color-base-success)
+}
+
+.button-warning {
+    background-color: var(--color-base-warning)
+}
+
+.button-danger {
+    background-color: var(--color-base-danger)
+}

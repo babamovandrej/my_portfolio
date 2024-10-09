@@ -1,17 +1,14 @@
 import "./App.css";
-import Landing from "./landing/landing";
-import useLoading from "./hooks/useLoading";
-import Loading from "./loading/loading";
+import Header from "./components/header/header";
+import Hero from "./sections/hero/hero";
 
 function App() {
-	const {loading, progress} = useLoading();
-
 	return (
 		<>
-			{loading ? <Loading progress={progress} /> : <Landing />}
+			<Header />
+			<Hero />
 		</>
 	);
 }
 
 export default App;
-
