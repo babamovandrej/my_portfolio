@@ -2,33 +2,36 @@
     display: flex;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 3rem;
-    gap: 4rem;
-    width: 100%;
+    height: calc(100vh - 340px);
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     justify-content: center;
-    margin-right: 4rem;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
 }
 
-.heading > p {
+.hero-heading {
     font-size: 5rem;
+    color: var(--color-foreground);
+    text-align: center;
+    font-weight: 300;
+    max-width: 1000px;
 }
 
-.sub-heading > p {
-    font-size: 1.5rem;
+.hero-subheading {
+    font-size: 2rem;
+    color: var(--color-foreground);
+    text-align: center;
+    font-weight: 200;
+    max-width: 800px;
+    margin-bottom: 2rem;
 }
 
-
-.hero-illustration {
-    width: 1200px;
-    height: 600px;
-    background-color: var(--color-content2);
-}
 
 
 

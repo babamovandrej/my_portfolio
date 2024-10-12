@@ -6,7 +6,8 @@ function Button(props) {
 	const typeClassMap = {
 		success: "button button-success",
 		warning: "button button-warning",
-		danger: "button button-danger"
+		danger: "button button-danger",
+		standard: "button button-standard"
 	};
 
 	const buttonClass = typeClassMap[type] || "button";

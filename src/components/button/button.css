@@ -1,7 +1,7 @@
 .button {
-    padding: 24px 40px;
+    padding: 16px 40px;
     font-size: 1.25em;
-    font-weight: 500;
+    font-weight: 300;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -24,4 +24,8 @@
 
 .button-danger {
     background-color: var(--color-base-danger)
+}
+
+.button-standard {
+    background-color: var(--color-base-primary)
 }
