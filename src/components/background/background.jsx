@@ -1,14 +1,13 @@
-import React from "react";
 import "./background.css";
+import useCanvasAnimation from "./useCanvasAnimation";
 
-const Background = () => {
-	return (
-		<>
-			<div className='background-container'>
-				<img src={"/Lights.svg"} alt={"Lights"} className='background-image' />
-			</div>
-		</>
-	);
-};
+function Background() {
+    const canvasRef = useCanvasAnimation();
+    return (
+        <div className="background-container">
+            <canvas className="bg-canvas" ref={canvasRef} />
+        </div>
+    );
+}
 
 export default Background;

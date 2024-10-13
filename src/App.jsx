@@ -1,14 +1,16 @@
 import "./App.css";
 import Background from "./components/background/background";
-import Header from "./components/header/header";
-import Hero from "./sections/hero/hero";
+import SideMenu from "./components/side-menu/side-menu";
+import SocialsMenu from "./components/socials-menu/socials-menu";
+import Sections from "./sections/sections";
 
 function App() {
 	return (
 		<>
-			<Header />
 			<Background />
-			<Hero />
+			<SideMenu />
+			<SocialsMenu />
+			<Sections />
 		</>
 	);
 }
