@@ -15,6 +15,53 @@
     font-weight: 200;
 }
 
-.highlight {
+.contact-container > p:last-child {
     font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-container p:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-foreground);
+    transform: scaleX(0);
+    transition: transform 0.8s ease-in-out; 
+}
+
+.contact-container p.animateStripfromLeft:after {
+    transform-origin: left center; 
+    animation: animateStripfromLeft 0.8s ease-in-out forwards; 
+}
+
+.contact-container p.animateStripfromRight:after {
+    transform-origin: right center; 
+    animation: animateStripfromRight 0.8s ease-in-out forwards;
+}
+
+@keyframes animateStripfromLeft {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+@keyframes animateStripfromRight {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
 }
