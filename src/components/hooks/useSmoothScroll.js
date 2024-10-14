@@ -1,37 +1,51 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 const useSmoothScroll = () => {
-	const containerRef = useRef(null);
+    const containerRef = useRef(null);
+    const scrollTimeoutRef = useRef(null);
 
-	useEffect(() => {
-		const handleWheel = (event) => {
-			event.preventDefault();
-			const container = containerRef.current;
-			if (!container) return;
+    useEffect(() => {
+        const handleWheel = (event) => {
+            event.preventDefault();
+            const container = containerRef.current;
+            if (!container) return;
 
-			const sectionHeight = window.innerHeight;
-			const currentScroll = container.scrollTop;
-			const newScroll = event.deltaY > 0 ? currentScroll + sectionHeight : currentScroll - sectionHeight;
+            if (scrollTimeoutRef.current) {
+                clearTimeout(scrollTimeoutRef.current);
+            }
 
-			container.scrollTo({
-				top: newScroll,
-				behavior: "smooth"
-			});
-		};
+            scrollTimeoutRef.current = setTimeout(() => {
+                const sectionHeight = window.innerHeight;
+                const currentScroll = container.scrollTop;
+                const newScroll = event.deltaY > 50
+                    ? currentScroll + sectionHeight
+                    : event.deltaY < -50
+                    ? currentScroll - sectionHeight
+                    : currentScroll;
 
-		const container = containerRef.current;
-		if (container) {
-			container.addEventListener("wheel", handleWheel);
-		}
+                container.scrollTo({
+                    top: newScroll,
+                    behavior: 'smooth'
+                });
+            }, 100);
+        };
 
-		return () => {
-			if (container) {
-				container.removeEventListener("wheel", handleWheel);
-			}
-		};
-	}, []);
+        const container = containerRef.current;
+        if (container) {
+            container.addEventListener('wheel', handleWheel);
+        }
 
-	return containerRef;
+        return () => {
+            if (container) {
+                container.removeEventListener('wheel', handleWheel);
+            }
+            if (scrollTimeoutRef.current) {
+                clearTimeout(scrollTimeoutRef.current);
+            }
+        };
+    }, []);
+
+    return containerRef;
 };
 
 export default useSmoothScroll;
