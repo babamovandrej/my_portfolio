@@ -12,6 +12,13 @@
     display: inline-block;
     font-size: 2.5rem; 
     margin: 5px 0;
+    font-weight: 200;
+}
+
+.highlight {
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .about-container p:after {
