@@ -1,0 +1,20 @@
+.contact-container {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.contact-container p {
+    position: relative; 
+    display: inline-block;
+    font-size: 2.5rem; 
+    margin: 5px 0;
+    font-weight: 200;
+}
+
+.highlight {
+    font-weight: 600;
+}
