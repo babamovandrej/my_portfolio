@@ -1,10 +1,13 @@
-import React from 'react';
 import './sections.css';
+
 import About from './about/about';
+import useSmoothScroll from '../components/hooks/useSmoothScroll';
 
 function Sections() {
+    const smoothScroll = useSmoothScroll();
+
     return (
-        <div className="snap-container">
+        <div className="snap-container" ref={smoothScroll}>
             <div className="snap-section" id="section-1">
                 <About />
             </div>
