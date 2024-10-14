@@ -2,11 +2,12 @@ import React from 'react';
 import './sections.css';
 import About from './about/about';
 import useSmoothScroll from '../components/hooks/useSmoothScroll';
+import Projects from './project/projects';
 
 const sections = [
     { id: 'about', component: <About /> },
     { id: 'skills', component: <div>Skills</div> },
-    { id: 'projects', component: <div>Projects</div> },
+    { id: 'projects', component: <Projects /> },
     { id: 'contact', component: <div>Contact</div> }
 ];
 
