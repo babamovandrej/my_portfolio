@@ -1,0 +1,69 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.globe {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px black;
+    animation: animateGlobe 15s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes animateGlobe {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -750px 0;
+    }
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    animation: animateText 10s linear infinite;
+    background-color: blanchedalmond;
+}
+
+.ring span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.rem;
+    font-weight: 200;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    color: white;
+    transform: rotateY(calc(var(--i) * calc(360deg / 39 ))) translateZ(220px);
+}
+
+.ring span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+@keyframes animateText {
+    0% {
+        transform: perspective(1000px) rotateY(360deg) rotateX(15deg) translateY(-30px);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(0deg) rotateX(15deg) translateY(-30px);
+    }
+    
+}
+
