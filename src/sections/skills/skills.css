@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 4rem;
 }
 
 .globe {
@@ -65,4 +65,11 @@
     }
     
 }
+
+.skills-content {
+    font-weight: 200;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
 
