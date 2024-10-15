@@ -44,18 +44,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  letter-spacing: -0.1rem;
+  letter-spacing: 0.15rem;
 }
 
 p {
   margin: 0;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.15rem;
   color: var(--color-foreground);
 }
 
 a {
   color: var(--color-foreground);
-  letter-spacing: -0.1rem;
+  letter-spacing: 0.15rem;
 }
 
