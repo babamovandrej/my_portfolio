@@ -16,8 +16,8 @@ function Skills() {
                 </div>
             </div>
             <div className="skills-content">
-                <p>Experienced in building both backend and frontend solutions.</p>
-                <p>Experienced in building both backend and frontend solutions.</p>
+                <p>
+                I build practical <span className="highlight">backend</span> and <span className="highlight">frontend</span> solution and enjoy taking on new challenges to turn ideas into reality.</p>
             </div>
         </div>
     );

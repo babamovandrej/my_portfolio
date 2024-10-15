@@ -67,9 +67,15 @@
 }
 
 .skills-content {
-    font-weight: 200;
-    font-size: 2rem;
-    margin: 2rem;
+    max-width: 800px;
+    text-align: center;
 }
 
+.skills-content p {
+    font-weight: 200;
+}
+
+.highlight {
+    font-weight: 600;
+}
 
