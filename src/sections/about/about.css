@@ -11,3 +11,13 @@
     font-weight: 400;
     font-size: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        max-width: 350px;
+    }
+
+    .about-container p {
+        font-size: 1.5rem;
+    }
+}

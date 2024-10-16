@@ -65,3 +65,9 @@
         transform: scaleX(0);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        max-width: 350px;
+    }
+}

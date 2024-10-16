@@ -42,3 +42,9 @@
     color: var(--color-foreground);
     font-size: 22px;
 }
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        max-width: 350px;
+    }
+}
