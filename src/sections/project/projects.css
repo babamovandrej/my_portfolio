@@ -1,42 +1,44 @@
 .projects-container {
     display: flex;
     flex-direction: column;
-    gap: 4rem;   
+    max-width: 1000px;
+    gap: 4rem;  
+
 }
 
 .project-container {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 .project-info {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
 }
 
 .skills-container {
     display: flex;
-    gap: 1rem;
 }
 
-.project-title {
-    font-size: 2.5rem;
+.project-title > p {
     font-weight: 600;
-    text-decoration: underline;
     color: var(--color-foreground);
-    margin-bottom: 0.25rem;
 }
 
 .project-year {
-    font-size: 1.75rem;
-    font-weight: 200;
-    color: var(--color-foreground);
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
 
-.project-description {
-    font-size: 2rem;
+.project-year > p {
+    font-weight: 200;
+    font-size: 22px;
+    color: var(--color-foreground);
+}
+
+.project-description > p {
     font-weight: 200;
     color: var(--color-foreground);
+    font-size: 22px;
 }
