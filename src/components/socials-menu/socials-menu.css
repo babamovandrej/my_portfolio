@@ -13,3 +13,9 @@
 .socials-menu img {
     width: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .socials-menu{
+        display: none;
+    }
+}

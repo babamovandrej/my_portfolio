@@ -97,3 +97,9 @@
     opacity: 0;
     transition-delay: 0s;
 }
+
+@media screen and (max-width: 768px) {
+    .side-menu{
+        display: none;
+    }
+}
