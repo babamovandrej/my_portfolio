@@ -3,10 +3,18 @@ import "./contact.css";
 function Contact() {
 	return (
 		<div className='contact-container'>
+			<div className="contact-spheres">
+				<div className="sphere sphere-1">
+					<img src="/social-icons/Calendly.svg" alt="linkedin" />
+				</div>
+				<div className="sphere sphere-2">
+					<img src="/social-icons/Telegram.svg" alt="linkedin" />
+				</div>
+				<div className="sphere sphere-2">
+					<img src="/social-icons/Discord.svg" alt="linkedin" />
+				</div>
+			</div>
 			<p>Let's build something cool together!</p>
-			<p>
-				<span className='new-line'>andrejbabamov@gmail.com</span>
-			</p>
 		</div>
 	);
 }
