@@ -1,26 +1,28 @@
 import React from "react";
 import "./projects.css";
-import SkillWidget from "../../components/skill-widget/skill-widget";
+
 
 const projects = [
 	{
 		id: 1,
 		name: "TokenShield",
-		year: "2023-2024",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+		description: "Digital asset security solution made for retail users"
+	},
+	{
+		id: 2,
+		name: "Proximity Protocol",
+		description: "Simple calculator covering all of the basic operations"
 	},
 	{
 		id: 3,
 		name: "Etch-a-Sketch",
-		year: "2020-2024",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+		description: "Sketching tool"
 	},
 	{
-		id: 2,
+		id: 4,
 		name: "Calculator",
-		year: "2021-2024",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
-	}
+		description: "Simple calculator covering all of the basic operations"
+	},
 ];
 
 function Projects() {
