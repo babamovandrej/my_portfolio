@@ -1,0 +1,21 @@
+.cursor {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--color-foreground);
+    position: fixed;
+    top: 0;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: transform 500ms;
+  }
+  
+.cursor::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    border: 1px solid var(--color-foreground);
+    width: 16px;
+    height: 16px;
+}
