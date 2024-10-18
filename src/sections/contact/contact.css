@@ -47,7 +47,19 @@
 }
 
 @media screen and (max-width: 768px) {
+    .contact-spheres {
+        display: flex;
+        flex-direction: column;
+    }
     .contact-container {
         max-width: 350px;
+    }
+    .contact-container p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .sphere {
+        width: 125px;
+        height: 125px;
     }
 }
