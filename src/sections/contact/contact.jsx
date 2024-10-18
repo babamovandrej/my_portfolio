@@ -14,7 +14,7 @@ function Contact() {
 					<img src="/social-icons/Discord.svg" alt="linkedin" />
 				</div>
 			</div>
-			<p>Let's build something cool together!</p>
+			<p>Let's build something <span className='highlight'>cool</span> together!</p>
 		</div>
 	);
 }
