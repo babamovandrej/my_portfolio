@@ -1,27 +1,31 @@
 import React from "react";
 import "./projects.css";
-
+import SkillWidget from "../../components/skill-widget/skill-widget";
 
 const projects = [
 	{
 		id: 1,
 		name: "TokenShield",
-		description: "Digital asset security solution made for retail users"
+		description: "Digital asset security made for retail users",
+		skills: ["Next.js", "Nest.js", "Prisma", "Postgres", "Redux"],
 	},
 	{
 		id: 2,
 		name: "Proximity Protocol",
-		description: "Simple calculator covering all of the basic operations"
+		description: "Tool for minting assets with NFC verification.",
+		skills: ["Next.js", "Typescript", "Solidity", "Redux"]
 	},
 	{
 		id: 3,
 		name: "Etch-a-Sketch",
-		description: "Sketching tool"
+		description: "Simple web-based drawing app to create sketches.",
+		skills: ["Javascript", "HTML", "CSS"]
 	},
 	{
 		id: 4,
 		name: "Calculator",
-		description: "Simple calculator covering all of the basic operations"
+		description: "Basic web calculator for quick math operations.",
+		skills: ["Javascript", "HTML", "CSS"]
 	},
 ];
 
@@ -42,8 +46,10 @@ const Project = ({ project }) => {
 				<div className='project-title'>
 					<p>{project.name}</p>
 				</div>
-				<div className='project-year'>
-					<p>{project.year}</p>
+				<div className='project-skills'>
+					{project.skills.map((skill, index) => (
+						<SkillWidget key={index} text={skill} />
+					))}
 				</div>
 			</div>
 			<div className='project-description'>
