@@ -31,24 +31,27 @@
     color: var(--color-foreground);
 }
 
-.project-year > p {
-    font-weight: 200;
-    font-size: 22px;
-    color: var(--color-foreground);
-}
-
 .project-description > p {
     font-weight: 200;
     color: var(--color-foreground);
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {    
     .projects-container {
         max-width: 350px;
     }
-
     .project-skills {
-        display: none;
+        gap: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .projects-title > p {
+        font-size: 1.5rem;
+    }
+    .project-description > p {
+        font-weight: 200;
+        color: var(--color-foreground);
+        font-size: 1.5rem;
     }
 }

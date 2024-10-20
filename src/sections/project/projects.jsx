@@ -7,7 +7,7 @@ const projects = [
 		id: 1,
 		name: "TokenShield",
 		description: "Digital asset security made for retail users",
-		skills: ["Next.js", "Nest.js", "Prisma", "Postgres", "Redux"],
+		skills: ["Next.js", "Nest.js", "Prisma", "Postgres", "Redux"]
 	},
 	{
 		id: 2,
@@ -20,13 +20,7 @@ const projects = [
 		name: "Etch-a-Sketch",
 		description: "Simple web-based drawing app to create sketches.",
 		skills: ["Javascript", "HTML", "CSS"]
-	},
-	{
-		id: 4,
-		name: "Calculator",
-		description: "Basic web calculator for quick math operations.",
-		skills: ["Javascript", "HTML", "CSS"]
-	},
+	}
 ];
 
 function Projects() {

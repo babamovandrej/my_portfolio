@@ -3,18 +3,30 @@ import "./contact.css";
 function Contact() {
 	return (
 		<div className='contact-container'>
-			<div className="contact-spheres">
-				<div className="sphere sphere-1">
-					<img src="/social-icons/Calendly.svg" alt="linkedin" />
+			<div className='contact-text'>
+				<p>
+					Want to build something <span className='highlight'>cool</span> together?
+				</p>
+				<p>Let's connect!</p>
+			</div>
+
+			<div className='links-container'>
+				<div className='contact-link'>
+					<a href='/'>
+						<p>Email</p>
+					</a>
 				</div>
-				<div className="sphere sphere-2">
-					<img src="/social-icons/Telegram.svg" alt="linkedin" />
+				<div className='contact-link'>
+					<a href='/'>
+						<p>Telegram</p>
+					</a>
 				</div>
-				<div className="sphere sphere-2">
-					<img src="/social-icons/Discord.svg" alt="linkedin" />
+				<div className='contact-link '>
+					<a href='/'>
+						<p>Discord</p>
+					</a>
 				</div>
 			</div>
-			<p>Let's build something <span className='highlight'>cool</span> together!</p>
 		</div>
 	);
 }
