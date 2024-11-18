@@ -15,7 +15,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .socials-menu{
+    .socials-menu {
         display: none;
     }
 }

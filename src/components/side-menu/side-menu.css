@@ -9,12 +9,12 @@
     animation-fill-mode: forwards;
 }
 
-.side-menu-list, .side-menu__list a {
+.side-menu-list, .side-menu-list a {
     position: relative;
     backface-visibility: hidden;
 }
 
-.side-menu__list {
+.side-menu-list {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -23,14 +23,14 @@
     list-style: none;
 }
 
-.side-menu__list a {
+.side-menu-list a {
     line-height: 1.5;
     text-decoration: none;
     display: block;
     padding: .7rem 1rem;
 }
 
-.side-menu__dot {
+.side-menu-dot {
     margin-top: -8px;
     transform: scale(1);
     position: absolute;
@@ -41,7 +41,7 @@
     height: 18px;
 }
 
-.side-menu__dot:before {
+.side-menu-dot:before {
     width: 10px;
     height: 10px;
     background-color: var(--color-foreground);
@@ -53,7 +53,7 @@
     transition: transform .35s, opacity .35s, -webkit-transform .35s;
 }
 
-.side-menu__dot:after {
+.side-menu-dot:after {
     border: 1px solid var(--color-foreground);
     width: 14px;
     height: 14px;
@@ -66,40 +66,40 @@
     transition: transform .35s, opacity .35s, -webkit-transform .35s;
 }
 
-.side-menu__link-name {
+.side-menu-link-name {
     display: inline-block;
     opacity: 0;
     transform: translate3d(-20px, 0, 0);
     transition: transform .35s, opacity .35s, -webkit-transform .35s;
 }
 
-.side-menu__list li.active .side-menu__link-name, .side-menu__list li:hover .side-menu__link-name {
+.side-menu-item.active .side-menu-link-name, .side-menu-item:hover .side-menu-link-name {
     opacity: 1;
     transform: translate3d(12px, 0, 0);
 }
 
-.side-menu__list li.active .side-menu__dot:before, .side-menu__list li:hover .side-menu__dot:before {
+.side-menu-item.active .side-menu-dot:before, .side-menu-item:hover .side-menu-dot:before {
     background-color: var(--color-active);
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     transition-delay: 0s;
 }
 
-.side-menu__list li.active .side-menu__dot:after, .side-menu__list li:hover .side-menu__dot:after {
+.side-menu-item.active .side-menu-dot:after, .side-menu-item:hover .side-menu-dot:after {
     border-color: var(--color-active);
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     transition-delay: 0s;
 }
 
-.side-menu__list li:not(.active):not(:hover) .side-menu__dot:after {
+.side-menu-item:not(.active):not(:hover) .side-menu-dot:after {
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     transition-delay: 0s;
 }
 
 @media screen and (max-width: 768px) {
-    .side-menu{
+    .side-menu {
         display: none;
     }
 }
